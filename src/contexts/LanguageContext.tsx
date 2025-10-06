@@ -182,6 +182,53 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.cosmetic': 'Cosmetic Dentistry',
     'footer.regenerative': 'Regenerative Therapy',
     'footer.rights': 'All rights reserved.',
+
+    // Hero Cards
+    'hero.card1.title': 'Surgical Precision',
+    'hero.card1.description': 'Digital planning meets microsurgical technique',
+    'hero.card2.title': 'Aesthetic Mastery',
+    'hero.card2.description': 'Designing smiles with artistic precision',
+    'hero.card3.title': 'Regenerative Science',
+    'hero.card3.description': 'Biology and technology harmonized',
+    'hero.discoverMore': 'Discover More',
+
+    // Locations
+    'location.sanMarcos': 'San Marcos',
+    'location.sanDiego': 'San Diego',
+    'location.twoLocations': 'Two Convenient San Diego Locations',
+    'location.subtitle': 'We proudly serve patients throughout San Diego County with exceptional dental implant and aesthetic dentistry services at our San Marcos and Rancho Bernardo offices.',
+    'location.primaryLocation': 'Primary Location',
+    'location.getDirections': 'Get Directions',
+    'location.freeParking': 'Free parking & wheelchair accessible',
+    'location.servingTitle': 'Proudly Serving Communities Throughout San Diego County',
+    'location.servingDescription': 'With locations in San Marcos and Rancho Bernardo, we provide convenient access to world-class dental care for patients across North County and Greater San Diego.',
+    'location.dontSeeCity': 'Don\'t see your city listed? We welcome patients from throughout San Diego County.',
+    'location.whyChoose': 'Why Patients Choose NCAI',
+    'location.stat1': 'Years Serving San Diego',
+    'location.stat2': 'Successful Implant Cases',
+    'location.stat3': 'Average Patient Rating',
+    'location.officeHours': 'Mon-Thu: 8:00 AM - 5:00 PM',
+    'location.fridayHours': 'Fri: 8:00 AM - 3:00 PM',
+
+    // PRF
+    'prf.highlight.tag': 'Regenerative Aesthetics',
+    'prf.highlight.title': 'Regenerative Healing Through PRF Technology',
+    'prf.highlight.description': 'Harness your body\'s own healing power with Platelet-Rich Fibrin (PRF) for facial aesthetics, enhanced surgical healing, and tissue regeneration. No synthetic materials—just natural results that work with your biology.',
+    'prf.highlight.benefit1': 'Facial rejuvenation & volume restoration',
+    'prf.highlight.benefit2': 'Accelerated surgical & implant healing',
+    'prf.highlight.benefit3': 'Bone & soft tissue regeneration',
+    'prf.highlight.benefit4': '100% autologous bio-therapy',
+    'prf.highlight.cta': 'Explore PRF Treatments',
+
+    // Procedures
+    'procedures.tag': 'Our Services',
+    'procedures.title': 'Comprehensive Care Rooted in Science & Artistry',
+    'procedures.description': 'Each treatment combines evidence-based protocols with advanced technology to deliver predictable, lasting results.',
+
+    // Gallery
+    'gallery.witnessText': 'Witness the intersection of surgical precision and aesthetic artistry through our patient outcomes. Each smile represents a unique journey to renewed confidence.',
+    'gallery.readyTransform': 'Ready to transform your smile?',
+    'gallery.scheduleCta': 'Schedule Your Consultation',
   },
   es: {
     // Navigation
@@ -328,5 +375,52 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.cosmetic': 'Odontología Cosmética',
     'footer.regenerative': 'Terapia Regenerativa',
     'footer.rights': 'Todos los derechos reservados.',
+
+    // Hero Cards
+    'hero.card1.title': 'Precisión Quirúrgica',
+    'hero.card1.description': 'Planificación digital combinada con técnica microquirúrgica',
+    'hero.card2.title': 'Maestría Estética',
+    'hero.card2.description': 'Diseñando sonrisas con precisión artística',
+    'hero.card3.title': 'Ciencia Regenerativa',
+    'hero.card3.description': 'Biología y tecnología en armonía',
+    'hero.discoverMore': 'Descubra Más',
+
+    // Locations
+    'location.sanMarcos': 'San Marcos',
+    'location.sanDiego': 'San Diego',
+    'location.twoLocations': 'Dos Ubicaciones Convenientes en San Diego',
+    'location.subtitle': 'Servimos con orgullo a pacientes en todo el Condado de San Diego con servicios excepcionales de implantes dentales y odontología estética en nuestras oficinas de San Marcos y Rancho Bernardo.',
+    'location.primaryLocation': 'Ubicación Principal',
+    'location.getDirections': 'Cómo Llegar',
+    'location.freeParking': 'Estacionamiento gratuito y accesible para sillas de ruedas',
+    'location.servingTitle': 'Sirviendo con Orgullo a Comunidades en Todo el Condado de San Diego',
+    'location.servingDescription': 'Con ubicaciones en San Marcos y Rancho Bernardo, brindamos acceso conveniente a atención dental de clase mundial para pacientes en todo North County y el Área Metropolitana de San Diego.',
+    'location.dontSeeCity': '¿No ve su ciudad en la lista? Damos la bienvenida a pacientes de todo el Condado de San Diego.',
+    'location.whyChoose': 'Por Qué los Pacientes Eligen NCAI',
+    'location.stat1': 'Años Sirviendo a San Diego',
+    'location.stat2': 'Casos de Implantes Exitosos',
+    'location.stat3': 'Calificación Promedio de Pacientes',
+    'location.officeHours': 'Lun-Jue: 8:00 AM - 5:00 PM',
+    'location.fridayHours': 'Vie: 8:00 AM - 3:00 PM',
+
+    // PRF
+    'prf.highlight.tag': 'Estética Regenerativa',
+    'prf.highlight.title': 'Curación Regenerativa a Través de la Tecnología PRF',
+    'prf.highlight.description': 'Aproveche el poder curativo natural de su cuerpo con Fibrina Rica en Plaquetas (PRF) para estética facial, curación quirúrgica mejorada y regeneración tisular. Sin materiales sintéticos—solo resultados naturales que trabajan con su biología.',
+    'prf.highlight.benefit1': 'Rejuvenecimiento facial y restauración de volumen',
+    'prf.highlight.benefit2': 'Curación quirúrgica y de implantes acelerada',
+    'prf.highlight.benefit3': 'Regeneración de hueso y tejido blando',
+    'prf.highlight.benefit4': 'Bioterapia 100% autóloga',
+    'prf.highlight.cta': 'Explorar Tratamientos PRF',
+
+    // Procedures
+    'procedures.tag': 'Nuestros Servicios',
+    'procedures.title': 'Atención Integral Basada en Ciencia y Arte',
+    'procedures.description': 'Cada tratamiento combina protocolos basados en evidencia con tecnología avanzada para ofrecer resultados predecibles y duraderos.',
+
+    // Gallery
+    'gallery.witnessText': 'Sea testigo de la intersección entre precisión quirúrgica y arte estético a través de los resultados de nuestros pacientes. Cada sonrisa representa un viaje único hacia una confianza renovada.',
+    'gallery.readyTransform': '¿Listo para transformar su sonrisa?',
+    'gallery.scheduleCta': 'Programe Su Consulta',
   },
 };

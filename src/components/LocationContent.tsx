@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { MapPin, Navigation as NavigationIcon, Clock, Car, Building2 } from 'lucide-react';
 import { BUSINESS_DATA } from '../config/businessData';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const fadeUp = (i = 0) => ({
   initial: { opacity: 0, y: 32 },
@@ -10,15 +11,17 @@ const fadeUp = (i = 0) => ({
 });
 
 export default function LocationContent() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative w-full py-24 md:py-32 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <motion.div {...fadeUp(0)} className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-semibold text-ncai-phantom mb-4">
-            Two Convenient San Diego Locations
+            {t('location.twoLocations')}
           </h2>
           <p className="text-lg text-ncai-arsenic max-w-3xl mx-auto">
-            We proudly serve patients throughout San Diego County with exceptional dental implant and aesthetic dentistry services at our San Marcos and Rancho Bernardo offices.
+            {t('location.subtitle')}
           </p>
         </motion.div>
 
@@ -39,7 +42,7 @@ export default function LocationContent() {
                   </h3>
                   {location.isPrimary && (
                     <span className="inline-block px-3 py-1 bg-primary-azure/10 text-primary-blue text-xs font-medium rounded-full">
-                      Primary Location
+                      {t('location.primaryLocation')}
                     </span>
                   )}
                 </div>
@@ -59,15 +62,15 @@ export default function LocationContent() {
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-primary-azure flex-shrink-0" />
                   <div className="text-ncai-graphite text-sm">
-                    <div>Mon-Thu: 8:00 AM - 5:00 PM</div>
-                    <div>Fri: 8:00 AM - 3:00 PM</div>
+                    <div>{t('location.officeHours')}</div>
+                    <div>{t('location.fridayHours')}</div>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <Car className="w-5 h-5 text-primary-azure flex-shrink-0" />
                   <p className="text-ncai-graphite text-sm">
-                    Free parking & wheelchair accessible
+                    {t('location.freeParking')}
                   </p>
                 </div>
 
@@ -85,7 +88,7 @@ export default function LocationContent() {
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary-blue text-primary-blue text-sm font-medium hover:border-primary-azure hover:text-primary-azure transition-colors"
                   >
                     <NavigationIcon className="w-4 h-4" />
-                    Get Directions
+                    {t('location.getDirections')}
                   </a>
                 </div>
               </div>
@@ -108,10 +111,10 @@ export default function LocationContent() {
 
         <motion.div {...fadeUp(0.6)} className="bg-white rounded-2xl border border-gray-200 p-8 md:p-12">
           <h3 className="text-2xl font-semibold text-ncai-phantom mb-6 text-center">
-            Proudly Serving Communities Throughout San Diego County
+            {t('location.servingTitle')}
           </h3>
           <p className="text-center text-ncai-arsenic mb-8 max-w-3xl mx-auto">
-            With locations in San Marcos and Rancho Bernardo, we provide convenient access to world-class dental care for patients across North County and Greater San Diego.
+            {t('location.servingDescription')}
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {BUSINESS_DATA.serviceArea.slice(0, -2).map((area, i) => (
@@ -130,27 +133,27 @@ export default function LocationContent() {
               {BUSINESS_DATA.serviceArea.slice(-2).join(' • ')}
             </p>
             <p className="text-sm text-ncai-graphite mt-2">
-              Don't see your city listed? We welcome patients from throughout San Diego County.
+              {t('location.dontSeeCity')}
             </p>
           </div>
         </motion.div>
 
         <motion.div {...fadeUp(1)} className="mt-16">
           <h3 className="text-2xl font-semibold text-ncai-phantom mb-8 text-center">
-            Why Patients Choose NCAI
+            {t('location.whyChoose')}
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-primary-blue mb-2">10+</div>
-              <div className="text-ncai-graphite">Years Serving San Diego</div>
+              <div className="text-ncai-graphite">{t('location.stat1')}</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary-blue mb-2">5,000+</div>
-              <div className="text-ncai-graphite">Successful Implant Cases</div>
+              <div className="text-ncai-graphite">{t('location.stat2')}</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary-blue mb-2">4.9/5</div>
-              <div className="text-ncai-graphite">Average Patient Rating</div>
+              <div className="text-ncai-graphite">{t('location.stat3')}</div>
             </div>
           </div>
         </motion.div>

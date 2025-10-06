@@ -1,39 +1,37 @@
 import { Layers, Smile, ActivitySquare, Boxes } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-
-const procedures = [
-  {
-    icon: Layers,
-    title: 'Implants & Full-Arch Solutions',
-    description:
-      'Surgical precision meets digital planning. From single-tooth replacements to complete arch restoration using All-on-X protocols and guided surgery.',
-    features: ['3D Surgical Planning', 'Same-Day Temporaries', 'Guided Implant Placement', 'Bone Regeneration'],
-  },
-  {
-    icon: Smile,
-    title: 'Aesthetic & Cosmetic Dentistry',
-    description:
-      'Transform your smile with porcelain veneers, minimal-prep restorations, and digital smile design tailored to your facial aesthetics.',
-    features: ['Digital Smile Design', 'Porcelain Veneers', 'Tooth Reshaping', 'Whitening Protocols'],
-  },
-  {
-    icon: ActivitySquare,
-    title: 'PRF & Regenerative Therapies',
-    description:
-      'Harness your body\'s natural healing with platelet-rich fibrin, bone grafting, and biologic-driven protocols for optimal tissue regeneration.',
-    features: ['PRF Therapy', 'Bone Grafting', 'Soft Tissue Management', 'Growth Factor Integration'],
-  },
-  {
-    icon: Boxes,
-    title: 'Digital Workflow & 3D Printing',
-    description:
-      'Chairside fabrication of surgical guides, temporaries, and final restorations using SprintRay technology for precision and efficiency.',
-    features: ['Intraoral Scanning', 'CBCT Imaging', 'Chairside 3D Printing', 'Virtual Treatment Planning'],
-  },
-];
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Procedures = () => {
+  const { t } = useLanguage();
   const { elementRef: headerRef, isVisible: headerVisible } = useScrollAnimation({ threshold: 0.2 });
+
+  const procedures = [
+    {
+      icon: Layers,
+      title: t('service1.title'),
+      description: t('service1.body'),
+      features: [t('service1.bullet1'), t('service1.bullet2'), t('service1.bullet3'), t('service1.bullet4')],
+    },
+    {
+      icon: Smile,
+      title: t('service2.title'),
+      description: t('service2.body'),
+      features: [t('service2.bullet1'), t('service2.bullet2'), t('service2.bullet3'), t('service2.bullet4')],
+    },
+    {
+      icon: ActivitySquare,
+      title: t('service3.title'),
+      description: t('service3.body'),
+      features: [t('service3.bullet1'), t('service3.bullet2'), t('service3.bullet3'), t('service3.bullet4')],
+    },
+    {
+      icon: Boxes,
+      title: t('service4.title'),
+      description: t('service4.body'),
+      features: [t('service4.bullet1'), t('service4.bullet2'), t('service4.bullet3'), t('service4.bullet4')],
+    },
+  ];
 
   return (
     <section id="procedures" className="py-32 bg-gradient-to-b from-gray-50 to-white">
@@ -45,14 +43,13 @@ const Procedures = () => {
           }`}
         >
           <span className="text-primary-blue font-semibold tracking-wider uppercase text-sm">
-            Our Services
+            {t('procedures.tag')}
           </span>
           <h2 className="text-h2 lg:text-5xl text-ncai-phantom font-light leading-tight">
-            Comprehensive Care Rooted in Science & Artistry
+            {t('procedures.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Each treatment combines evidence-based protocols with advanced technology to deliver
-            predictable, lasting results.
+            {t('procedures.description')}
           </p>
         </div>
 
@@ -94,7 +91,7 @@ const Procedures = () => {
                   </div>
 
                   <button className="text-primary-blue font-semibold text-sm hover:text-primary-azure transition-colors flex items-center group/btn">
-                    Learn More
+                    {t('services.learnMore')}
                     <span className="ml-2 group-hover/btn:translate-x-1 transition-transform">→</span>
                   </button>
                 </div>

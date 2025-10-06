@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Sparkles, ArrowRight } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const fadeUp = (i = 0) => ({
   initial: { opacity: 0, y: 32 },
@@ -10,6 +11,8 @@ const fadeUp = (i = 0) => ({
 });
 
 export default function PRFHighlight() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative w-full py-24 md:py-32 bg-gradient-to-br from-gray-50 via-white to-gray-50 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary-azure/5 via-transparent to-primary-blue/5"></div>
@@ -20,36 +23,35 @@ export default function PRFHighlight() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-blue/5 border border-primary-azure/20 mb-4">
               <Sparkles className="w-4 h-4 text-primary-azure" />
               <span className="text-sm text-primary-blue font-semibold tracking-wide">
-                Regenerative Aesthetics
+                {t('prf.highlight.tag')}
               </span>
             </div>
 
             <h2 className="text-3xl md:text-5xl font-semibold text-ncai-phantom mb-4">
-              Regenerative Healing Through <span className="text-primary-blue">PRF Technology</span>
+              {t('prf.highlight.title').split('PRF Technology')[0]}
+              <span className="text-primary-blue">PRF Technology</span>
             </h2>
 
             <p className="text-lg text-ncai-arsenic leading-relaxed mb-6">
-              Harness your body's own healing power with Platelet-Rich Fibrin (PRF) for facial aesthetics,
-              enhanced surgical healing, and tissue regeneration. No synthetic materials—just natural results
-              that work with your biology.
+              {t('prf.highlight.description')}
             </p>
 
             <div className="space-y-3 mb-8">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-ncai-graphite">Facial rejuvenation & volume restoration</p>
+                <p className="text-ncai-graphite">{t('prf.highlight.benefit1')}</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-ncai-graphite">Accelerated surgical & implant healing</p>
+                <p className="text-ncai-graphite">{t('prf.highlight.benefit2')}</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-ncai-graphite">Bone & soft tissue regeneration</p>
+                <p className="text-ncai-graphite">{t('prf.highlight.benefit3')}</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-ncai-graphite">100% autologous bio-therapy</p>
+                <p className="text-ncai-graphite">{t('prf.highlight.benefit4')}</p>
               </div>
             </div>
 
@@ -57,7 +59,7 @@ export default function PRFHighlight() {
               to="/prf-aesthetics"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary-blue to-primary-azure text-white font-semibold hover:shadow-lg hover:shadow-primary-azure/30 transition-all duration-300 hover:scale-105"
             >
-              Explore PRF Treatments
+              {t('prf.highlight.cta')}
               <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>

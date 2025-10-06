@@ -51,9 +51,9 @@ const Hero = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 className="text-ncai-phantom font-bold text-xl tracking-tight">Surgical Precision</h3>
+                <h3 className="text-ncai-phantom font-bold text-xl tracking-tight">{t('hero.card1.title')}</h3>
                 <p className="text-ncai-arsenic text-sm leading-relaxed">
-                  Digital planning meets microsurgical technique
+                  {t('hero.card1.description')}
                 </p>
               </div>
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-blue to-primary-azure transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
@@ -67,9 +67,9 @@ const Hero = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                   </svg>
                 </div>
-                <h3 className="text-ncai-phantom font-bold text-xl tracking-tight">Aesthetic Mastery</h3>
+                <h3 className="text-ncai-phantom font-bold text-xl tracking-tight">{t('hero.card2.title')}</h3>
                 <p className="text-ncai-arsenic text-sm leading-relaxed">
-                  Designing smiles with artistic precision
+                  {t('hero.card2.description')}
                 </p>
               </div>
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-azure to-primary-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
@@ -83,9 +83,9 @@ const Hero = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                   </svg>
                 </div>
-                <h3 className="text-ncai-phantom font-bold text-xl tracking-tight">Regenerative Science</h3>
+                <h3 className="text-ncai-phantom font-bold text-xl tracking-tight">{t('hero.card3.title')}</h3>
                 <p className="text-ncai-arsenic text-sm leading-relaxed">
-                  Biology and technology harmonized
+                  {t('hero.card3.description')}
                 </p>
               </div>
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-blue to-primary-azure transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
@@ -126,7 +126,7 @@ const Hero = () => {
           className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 group"
           aria-label="Scroll down"
         >
-          <span className="text-ncai-graphite text-sm tracking-wider uppercase font-medium">Discover More</span>
+          <span className="text-ncai-graphite text-sm tracking-wider uppercase font-medium">{t('hero.discoverMore')}</span>
           <ArrowDown className="w-6 h-6 text-ncai-graphite animate-bounce group-hover:text-primary-azure transition-colors" />
         </a>
       </div>

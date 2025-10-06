@@ -107,7 +107,7 @@ export default function Gallery() {
             {t('gallery.description')}
           </p>
           <p className="text-gray-500 max-w-2xl mx-auto">
-            Witness the intersection of surgical precision and aesthetic artistry through our patient outcomes. Each smile represents a unique journey to renewed confidence.
+            {t('gallery.witnessText')}
           </p>
         </div>
 
@@ -259,13 +259,13 @@ export default function Gallery() {
 
         <div className="mt-16 text-center">
           <p className="text-gray-600 mb-6">
-            Ready to transform your smile?
+            {t('gallery.readyTransform')}
           </p>
           <a
             href="#contact"
             className="inline-block px-8 py-4 bg-primary-blue text-white rounded-xl font-semibold hover:bg-primary-azure transition-colors shadow-lg hover:shadow-xl"
           >
-            Schedule Your Consultation
+            {t('gallery.scheduleCta')}
           </a>
         </div>
       </div>
