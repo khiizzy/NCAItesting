@@ -138,21 +138,6 @@ export default function LocationContent() {
           </div>
         </motion.div>
 
-        <motion.div {...fadeUp(1)} className="mt-16">
-          <h3 className="text-2xl font-semibold text-ncai-phantom mb-8 text-center">
-            {t('location.whyChoose')}
-          </h3>
-          <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary-blue mb-2">30+</div>
-              <div className="text-ncai-graphite">{t('location.stat2')}</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary-blue mb-2">4.9/5</div>
-              <div className="text-ncai-graphite">{t('location.stat3')}</div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

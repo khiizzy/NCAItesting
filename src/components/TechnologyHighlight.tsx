@@ -34,11 +34,11 @@ export default function TechnologyHighlight() {
             </div>
 
             <h3 className="text-2xl md:text-3xl font-semibold text-ncai-phantom mb-3">
-              Digital Workflow & Technology
+              <span className="text-primary-blue">Digital Workflow</span> & Technology
             </h3>
 
             <p className="text-base text-ncai-arsenic leading-relaxed mb-5">
-              Our digital ecosystem integrates photogrammetry, CBCT imaging, 3D printing, and virtual planning for unprecedented precision.
+              Our digital ecosystem integrates advanced imaging, CBCT technology, 3D printing, and virtual planning for unprecedented precision.
             </p>
 
             <div className="space-y-2 mb-6">

@@ -23,7 +23,7 @@ export default function DentistryHighlight() {
             </div>
 
             <h3 className="text-2xl md:text-3xl font-semibold text-ncai-phantom mb-3">
-              Aesthetic & General Dentistry
+              <span className="text-primary-blue">Aesthetic & General</span> Dentistry
             </h3>
 
             <p className="text-base text-ncai-arsenic leading-relaxed mb-5">
@@ -33,7 +33,7 @@ export default function DentistryHighlight() {
             <div className="space-y-2 mb-6">
               <div className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-sm text-ncai-graphite">Digital smile design & photogrammetry</p>
+                <p className="text-sm text-ncai-graphite">Digital smile design & preview</p>
               </div>
               <div className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary-azure mt-2"></div>

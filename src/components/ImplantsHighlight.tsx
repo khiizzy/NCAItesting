@@ -34,7 +34,7 @@ export default function ImplantsHighlight() {
             </div>
 
             <h3 className="text-2xl md:text-3xl font-semibold text-ncai-phantom mb-3">
-              Implants & Full-Arch Solutions
+              <span className="text-primary-blue">Implants</span> & Full-Arch Solutions
             </h3>
 
             <p className="text-base text-ncai-arsenic leading-relaxed mb-5">
