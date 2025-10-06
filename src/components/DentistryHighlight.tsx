@@ -15,33 +15,33 @@ export default function DentistryHighlight() {
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <motion.div {...fadeUp(0)}>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-blue/5 border border-primary-azure/20 mb-3">
-              <Smile className="w-3.5 h-3.5 text-primary-azure" />
-              <span className="text-xs text-primary-blue font-semibold tracking-wide">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-blue/5 border border-primary-azure/20 mb-4">
+              <Smile className="w-4 h-4 text-primary-azure" />
+              <span className="text-sm text-primary-blue font-semibold tracking-wide">
                 Smile Transformation
               </span>
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-semibold text-ncai-phantom mb-3">
+            <h2 className="text-3xl md:text-5xl font-semibold text-ncai-phantom mb-4">
               <span className="text-primary-blue">Aesthetic & General</span> Dentistry
-            </h3>
+            </h2>
 
-            <p className="text-base text-ncai-arsenic leading-relaxed mb-5">
+            <p className="text-lg text-ncai-arsenic leading-relaxed mb-6">
               Transform your smile with porcelain veneers, digital smile design, and comprehensive preventive care tailored to your facial aesthetics.
             </p>
 
-            <div className="space-y-2 mb-6">
+            <div className="space-y-3 mb-8">
               <div className="flex items-start gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-sm text-ncai-graphite">Digital smile design & preview</p>
+                <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
+                <p className="text-ncai-graphite">Digital smile design & preview</p>
               </div>
               <div className="flex items-start gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-sm text-ncai-graphite">Minimal-prep porcelain veneers</p>
+                <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
+                <p className="text-ncai-graphite">Minimal-prep porcelain veneers</p>
               </div>
               <div className="flex items-start gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-sm text-ncai-graphite">Comprehensive preventive care</p>
+                <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
+                <p className="text-ncai-graphite">Comprehensive preventive care</p>
               </div>
             </div>
 

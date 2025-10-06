@@ -26,33 +26,33 @@ export default function TechnologyHighlight() {
           </motion.div>
 
           <motion.div {...fadeUp(0.2)} className="order-1 md:order-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-blue/5 border border-primary-azure/20 mb-3">
-              <Cpu className="w-3.5 h-3.5 text-primary-azure" />
-              <span className="text-xs text-primary-blue font-semibold tracking-wide">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-blue/5 border border-primary-azure/20 mb-4">
+              <Cpu className="w-4 h-4 text-primary-azure" />
+              <span className="text-sm text-primary-blue font-semibold tracking-wide">
                 Digital Excellence
               </span>
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-semibold text-ncai-phantom mb-3">
+            <h2 className="text-3xl md:text-5xl font-semibold text-ncai-phantom mb-4">
               <span className="text-primary-blue">Digital Workflow</span> & Technology
-            </h3>
+            </h2>
 
-            <p className="text-base text-ncai-arsenic leading-relaxed mb-5">
+            <p className="text-lg text-ncai-arsenic leading-relaxed mb-6">
               Our digital ecosystem integrates advanced imaging, CBCT technology, 3D printing, and virtual planning for unprecedented precision.
             </p>
 
-            <div className="space-y-2 mb-6">
+            <div className="space-y-3 mb-8">
               <div className="flex items-start gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-sm text-ncai-graphite">100% digital workflow integration</p>
+                <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
+                <p className="text-ncai-graphite">100% digital workflow integration</p>
               </div>
               <div className="flex items-start gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-sm text-ncai-graphite">Chairside 3D printing</p>
+                <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
+                <p className="text-ncai-graphite">Chairside 3D printing</p>
               </div>
               <div className="flex items-start gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-sm text-ncai-graphite">3D virtual treatment planning</p>
+                <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
+                <p className="text-ncai-graphite">3D virtual treatment planning</p>
               </div>
             </div>
 
