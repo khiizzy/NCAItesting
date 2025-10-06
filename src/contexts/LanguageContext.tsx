@@ -46,6 +46,9 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.gallery': 'Gallery',
     'nav.contact': 'Contact',
     'nav.consultation': 'Book Consultation',
+    'nav.dentistry': 'Aesthetic & General Dentistry',
+    'nav.implants': 'Implants',
+    'nav.facialAesthetics': 'Facial Aesthetics',
 
     // Hero
     'hero.title': 'Precision. Artistry. Innovation.',
@@ -239,6 +242,9 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.gallery': 'Galería',
     'nav.contact': 'Contacto',
     'nav.consultation': 'Reservar Consulta',
+    'nav.dentistry': 'Odontología Estética y General',
+    'nav.implants': 'Implantes',
+    'nav.facialAesthetics': 'Estética Facial',
 
     // Hero
     'hero.title': 'Precisión. Arte. Innovación.',

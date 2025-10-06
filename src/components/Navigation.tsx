@@ -20,9 +20,9 @@ const Navigation = () => {
 
   const navItems = [
     { label: t('nav.about'), href: '#about', isHash: true },
-    { label: 'Aesthetic & General Dentistry', href: '/dentistry', isHash: false },
-    { label: 'Implants', href: '/implants', isHash: false },
-    { label: 'Facial Aesthetics', href: '/prf-aesthetics', isHash: false },
+    { label: t('nav.dentistry'), href: '/dentistry', isHash: false },
+    { label: t('nav.implants'), href: '/implants', isHash: false },
+    { label: t('nav.facialAesthetics'), href: '/prf-aesthetics', isHash: false },
     { label: t('nav.gallery'), href: '#gallery', isHash: true },
   ];
 
