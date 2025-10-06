@@ -59,30 +59,6 @@ const galleryItems: GalleryItem[] = [
     category: 'Implants',
     description: 'Single tooth implant restoration',
     procedure: 'Single Tooth Implant'
-  },
-  {
-    id: 7,
-    before: 'https://images.pexels.com/photos/5340280/pexels-photo-5340280.jpeg?auto=compress&cs=tinysrgb&w=800',
-    after: 'https://images.pexels.com/photos/3779705/pexels-photo-3779705.jpeg?auto=compress&cs=tinysrgb&w=800',
-    category: 'Full Mouth',
-    description: 'Complete smile makeover with digital design',
-    procedure: 'Full Mouth Reconstruction'
-  },
-  {
-    id: 8,
-    before: 'https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=800',
-    after: 'https://images.pexels.com/photos/6529056/pexels-photo-6529056.jpeg?auto=compress&cs=tinysrgb&w=800',
-    category: 'Cosmetic',
-    description: 'Gap closure and alignment correction',
-    procedure: 'Cosmetic Dentistry'
-  },
-  {
-    id: 9,
-    before: 'https://images.pexels.com/photos/6627373/pexels-photo-6627373.jpeg?auto=compress&cs=tinysrgb&w=800',
-    after: 'https://images.pexels.com/photos/3779709/pexels-photo-3779709.jpeg?auto=compress&cs=tinysrgb&w=800',
-    category: 'Veneers',
-    description: 'Natural-looking veneer placement',
-    procedure: 'Porcelain Veneers'
   }
 ];
 
@@ -158,7 +134,7 @@ export default function Gallery() {
           })}
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {filteredItems.map((item) => (
             <div
               key={item.id}
