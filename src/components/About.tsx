@@ -55,21 +55,21 @@ const About = () => {
                   <Award className="w-8 h-8 text-primary-blue" />
                 </div>
                 <div className="text-3xl text-gray-900 font-semibold">40+</div>
-                <div className="text-sm text-gray-600">Years Combined Experience</div>
+                <div className="text-sm text-gray-600">{t('about.stat1')}</div>
               </div>
               <div className="space-y-2 text-center">
                 <div className="w-16 h-16 bg-primary-azure/10 rounded-full flex items-center justify-center mx-auto">
                   <Microscope className="w-8 h-8 text-primary-blue" />
                 </div>
                 <div className="text-3xl text-gray-900 font-semibold">30+</div>
-                <div className="text-sm text-gray-600">Years Serving North County</div>
+                <div className="text-sm text-gray-600">{t('about.stat2')}</div>
               </div>
               <div className="space-y-2 text-center">
                 <div className="w-16 h-16 bg-primary-azure/10 rounded-full flex items-center justify-center mx-auto">
                   <Microscope className="w-8 h-8 text-primary-blue" />
                 </div>
                 <div className="text-3xl text-gray-900 font-semibold">100%</div>
-                <div className="text-sm text-gray-600">Digital Workflow</div>
+                <div className="text-sm text-gray-600">{t('about.stat3')}</div>
               </div>
             </div>
           </div>

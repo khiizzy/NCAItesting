@@ -25,7 +25,7 @@ const Experience = () => {
             {t('experience.tag')}
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl text-ncai-phantom font-light mb-6 leading-tight">
-            The NCAI <span className="text-primary-blue font-semibold">Experience</span>
+            {t('experience.title')}
           </h2>
           <p className="text-xl text-ncai-arsenic max-w-3xl mx-auto leading-relaxed">
             {t('experience.description')}
@@ -48,8 +48,8 @@ const Experience = () => {
                     <Award className="w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold">Excellence in Care</h3>
-                    <p className="text-white/80">Three Exceptional Doctors</p>
+                    <h3 className="text-2xl font-bold">{t('experience.excellenceTitle')}</h3>
+                    <p className="text-white/80">{t('experience.threeDoctorstitle')}</p>
                   </div>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const Experience = () => {
                   <GraduationCap className="w-7 h-7 text-white" />
                 </div>
                 <h4 className="text-2xl font-bold text-primary-blue mb-2">40+</h4>
-                <p className="text-sm text-ncai-graphite">Years Combined Experience</p>
+                <p className="text-sm text-ncai-graphite">{t('experience.combinedExperience')}</p>
               </div>
 
               <div className="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-azure/30">
@@ -74,16 +74,16 @@ const Experience = () => {
                   <Heart className="w-7 h-7 text-white" />
                 </div>
                 <h4 className="text-2xl font-bold text-primary-blue mb-2">100%</h4>
-                <p className="text-sm text-ncai-graphite">Patient-Centered Care</p>
+                <p className="text-sm text-ncai-graphite">{t('experience.patientCentered')}</p>
               </div>
             </div>
 
             <div className="bg-gradient-to-br from-primary-blue/5 to-primary-azure/5 rounded-2xl p-8 border border-primary-azure/20">
               <h4 className="text-xl font-semibold text-ncai-phantom mb-4">
-                Meet Our Doctors
+                {t('experience.meetDoctors')}
               </h4>
               <p className="text-ncai-graphite leading-relaxed mb-6">
-                Our team combines advanced training in implantology, cosmetic dentistry, and regenerative techniques with a commitment to personalized care.
+                {t('experience.teamDescription')}
               </p>
 
               <div className="space-y-6">
@@ -93,12 +93,12 @@ const Experience = () => {
                       <span className="text-white font-bold text-sm">KH</span>
                     </div>
                     <div>
-                      <h5 className="font-semibold text-ncai-phantom">Dr. Khizer Hafeez</h5>
-                      <p className="text-xs text-ncai-graphite">DDS, Fellowship in Implant Dentistry, Diplomate ABOI/ID</p>
+                      <h5 className="font-semibold text-ncai-phantom">{t('experience.dr1.name')}</h5>
+                      <p className="text-xs text-ncai-graphite">{t('experience.dr1.title')}</p>
                     </div>
                   </div>
                   <p className="text-sm text-ncai-graphite leading-relaxed pl-15">
-                    Board-certified in implant dentistry with advanced training in full-arch reconstruction and digital surgical planning. Dr. Hafeez combines surgical expertise with an unwavering commitment to biological integration and long-term stability.
+                    {t('experience.dr1.bio')}
                   </p>
                 </div>
 
@@ -108,12 +108,12 @@ const Experience = () => {
                       <span className="text-white font-bold text-sm">DA</span>
                     </div>
                     <div>
-                      <h5 className="font-semibold text-ncai-phantom">Dr. Dariyan Ayazi</h5>
-                      <p className="text-xs text-ncai-graphite">DDS, Advanced Aesthetic & Restorative Dentistry</p>
+                      <h5 className="font-semibold text-ncai-phantom">{t('experience.dr2.name')}</h5>
+                      <p className="text-xs text-ncai-graphite">{t('experience.dr2.title')}</p>
                     </div>
                   </div>
                   <p className="text-sm text-ncai-graphite leading-relaxed pl-15">
-                    Specializing in aesthetic restorative dentistry and minimally invasive smile design. Dr. Ayazi leverages digital tools and regenerative protocols to create results that honor both function and the natural architecture of each smile.
+                    {t('experience.dr2.bio')}
                   </p>
                 </div>
 
@@ -123,12 +123,12 @@ const Experience = () => {
                       <span className="text-white font-bold text-sm">NH</span>
                     </div>
                     <div>
-                      <h5 className="font-semibold text-ncai-phantom">Dr. Nelson Howard</h5>
-                      <p className="text-xs text-ncai-graphite">DDS, Comprehensive & Cosmetic Dentistry</p>
+                      <h5 className="font-semibold text-ncai-phantom">{t('experience.dr3.name')}</h5>
+                      <p className="text-xs text-ncai-graphite">{t('experience.dr3.title')}</p>
                     </div>
                   </div>
                   <p className="text-sm text-ncai-graphite leading-relaxed pl-15">
-                    Expert in comprehensive restorative and cosmetic dentistry with a focus on precision diagnostics and patient-centered care. Dr. Howard brings decades of clinical excellence and a passion for integrating emerging technologies into everyday practice.
+                    {t('experience.dr3.bio')}
                   </p>
                 </div>
               </div>

@@ -164,6 +164,26 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.feature3.description': 'A spa-like atmosphere designed to reduce anxiety and promote healing.',
     'experience.feature4.title': 'Comfort-First Philosophy',
     'experience.feature4.description': 'From noise-canceling headphones to sedation options, your comfort is our priority.',
+    'experience.excellenceTitle': 'Excellence in Care',
+    'experience.threeDoctorstitle': 'Three Exceptional Doctors',
+    'experience.combinedExperience': 'Years Combined Experience',
+    'experience.patientCentered': 'Patient-Centered Care',
+    'experience.meetDoctors': 'Meet Our Doctors',
+    'experience.teamDescription': 'Our team combines advanced training in implantology, cosmetic dentistry, and regenerative techniques with a commitment to personalized care.',
+    'experience.dr1.name': 'Dr. Khizer Hafeez',
+    'experience.dr1.title': 'DDS, Fellowship in Implant Dentistry, Diplomate ABOI/ID',
+    'experience.dr1.bio': 'Board-certified in implant dentistry with advanced training in full-arch reconstruction and digital surgical planning. Dr. Hafeez combines surgical expertise with an unwavering commitment to biological integration and long-term stability.',
+    'experience.dr2.name': 'Dr. Dariyan Ayazi',
+    'experience.dr2.title': 'DDS, Advanced Aesthetic & Restorative Dentistry',
+    'experience.dr2.bio': 'Specializing in aesthetic restorative dentistry and minimally invasive smile design. Dr. Ayazi leverages digital tools and regenerative protocols to create results that honor both function and the natural architecture of each smile.',
+    'experience.dr3.name': 'Dr. Nelson Howard',
+    'experience.dr3.title': 'DDS, Comprehensive & Cosmetic Dentistry',
+    'experience.dr3.bio': 'Expert in comprehensive restorative and cosmetic dentistry with a focus on precision diagnostics and patient-centered care. Dr. Howard brings decades of clinical excellence and a passion for integrating emerging technologies into everyday practice.',
+
+    // About stats
+    'about.stat1': 'Years Combined Experience',
+    'about.stat2': 'Years Serving North County',
+    'about.stat3': 'Digital Workflow',
 
     // Gallery
     'gallery.tag': 'Before & After',
@@ -360,6 +380,26 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.feature3.description': 'Una atmósfera tipo spa diseñada para reducir la ansiedad y promover la curación.',
     'experience.feature4.title': 'Filosofía de Comodidad Primero',
     'experience.feature4.description': 'Desde auriculares con cancelación de ruido hasta opciones de sedación, su comodidad es nuestra prioridad.',
+    'experience.excellenceTitle': 'Excelencia en Atención',
+    'experience.threeDoctorstitle': 'Tres Doctores Excepcionales',
+    'experience.combinedExperience': 'Años de Experiencia Combinada',
+    'experience.patientCentered': 'Atención Centrada en el Paciente',
+    'experience.meetDoctors': 'Conozca a Nuestros Doctores',
+    'experience.teamDescription': 'Nuestro equipo combina capacitación avanzada en implantología, odontología cosmética y técnicas regenerativas con un compromiso hacia la atención personalizada.',
+    'experience.dr1.name': 'Dr. Khizer Hafeez',
+    'experience.dr1.title': 'DDS, Especialización en Implantología Dental, Diplomado ABOI/ID',
+    'experience.dr1.bio': 'Certificado por la junta en implantología dental con capacitación avanzada en reconstrucción de arco completo y planificación quirúrgica digital. El Dr. Hafeez combina experiencia quirúrgica con un compromiso inquebrantable hacia la integración biológica y estabilidad a largo plazo.',
+    'experience.dr2.name': 'Dr. Dariyan Ayazi',
+    'experience.dr2.title': 'DDS, Odontología Estética y Restaurativa Avanzada',
+    'experience.dr2.bio': 'Especializado en odontología restaurativa estética y diseño de sonrisa mínimamente invasivo. El Dr. Ayazi aprovecha herramientas digitales y protocolos regenerativos para crear resultados que honran tanto la función como la arquitectura natural de cada sonrisa.',
+    'experience.dr3.name': 'Dr. Nelson Howard',
+    'experience.dr3.title': 'DDS, Odontología Integral y Cosmética',
+    'experience.dr3.bio': 'Experto en odontología restaurativa y cosmética integral con enfoque en diagnósticos de precisión y atención centrada en el paciente. El Dr. Howard aporta décadas de excelencia clínica y una pasión por integrar tecnologías emergentes en la práctica diaria.',
+
+    // About stats
+    'about.stat1': 'Años de Experiencia Combinada',
+    'about.stat2': 'Años Sirviendo a North County',
+    'about.stat3': 'Flujo de Trabajo Digital',
 
     // Gallery
     'gallery.tag': 'Antes y Después',

@@ -142,13 +142,9 @@ export default function LocationContent() {
           <h3 className="text-2xl font-semibold text-ncai-phantom mb-8 text-center">
             {t('location.whyChoose')}
           </h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary-blue mb-2">10+</div>
-              <div className="text-ncai-graphite">{t('location.stat1')}</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary-blue mb-2">5,000+</div>
+              <div className="text-4xl font-bold text-primary-blue mb-2">30+</div>
               <div className="text-ncai-graphite">{t('location.stat2')}</div>
             </div>
             <div className="text-center">

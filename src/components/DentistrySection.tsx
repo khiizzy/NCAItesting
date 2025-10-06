@@ -25,7 +25,7 @@ export function AestheticHero() {
             Transform your smile with porcelain veneers, minimal-prep restorations, and digital smile design tailored to your facial aesthetics. From cosmetic enhancement to comprehensive care.
           </motion.p>
           <motion.ul {...fadeUp(0.5)} className="mt-4 space-y-1 text-ncai-arsenic">
-            <li className="flex items-start gap-2"><span className="text-primary-azure">•</span> Digital smile design with photogrammetry</li>
+            <li className="flex items-start gap-2"><span className="text-primary-azure">•</span> Digital smile design & preview</li>
             <li className="flex items-start gap-2"><span className="text-primary-azure">•</span> Minimal-prep porcelain veneers</li>
             <li className="flex items-start gap-2"><span className="text-primary-azure">•</span> Comprehensive preventive care</li>
           </motion.ul>
@@ -42,7 +42,7 @@ export function AestheticHero() {
           <div className="aspect-[4/3] rounded-2xl bg-white/70 border border-primary-blue shadow-xl shadow-primary-azure/20 flex items-center justify-center">
             <div className="text-center p-6">
               <p className="text-sm text-ncai-arsenic">Design Language</p>
-              <p className="text-2xl font-semibold text-primary-blue">Photogrammetry • DSD • Veneers</p>
+              <p className="text-2xl font-semibold text-primary-blue">Digital Design • Veneers • Whitening</p>
             </div>
           </div>
           <div className="pointer-events-none absolute -z-10 -top-10 -right-10 w-48 h-48 rounded-3xl bg-primary-azure/30 blur-2xl" />
@@ -64,7 +64,7 @@ const AESTHETIC = [
     k: "dsd",
     title: "Digital Smile Design",
     body:
-      "3D photogrammetry and virtual planning to preview your new smile before treatment begins.",
+      "Advanced digital technology and virtual planning to preview your new smile before treatment begins.",
     bullets: ["Facial analysis", "Virtual preview", "Precise planning", "Predictable outcomes"],
   },
   {
