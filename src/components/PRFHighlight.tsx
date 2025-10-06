@@ -25,26 +25,31 @@ export default function PRFHighlight() {
             </div>
 
             <h2 className="text-3xl md:text-5xl font-semibold text-ncai-phantom mb-4">
-              Natural Beauty Through <span className="text-primary-blue">PRF Technology</span>
+              Regenerative Healing Through <span className="text-primary-blue">PRF Technology</span>
             </h2>
 
             <p className="text-lg text-ncai-arsenic leading-relaxed mb-6">
-              Harness your body's own healing power with Platelet-Rich Fibrin (PRF) for facial rejuvenation.
-              No synthetic fillers—just elegant, natural results that work with your biology.
+              Harness your body's own healing power with Platelet-Rich Fibrin (PRF) for facial aesthetics,
+              enhanced surgical healing, and tissue regeneration. No synthetic materials—just natural results
+              that work with your biology.
             </p>
 
             <div className="space-y-3 mb-8">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-ncai-graphite">Under-eye rejuvenation & volume restoration</p>
+                <p className="text-ncai-graphite">Facial rejuvenation & volume restoration</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-ncai-graphite">Fine-line smoothing with microneedling</p>
+                <p className="text-ncai-graphite">Accelerated surgical & implant healing</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
-                <p className="text-ncai-graphite">100% autologous bio-fillers</p>
+                <p className="text-ncai-graphite">Bone & soft tissue regeneration</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full bg-primary-azure mt-2"></div>
+                <p className="text-ncai-graphite">100% autologous bio-therapy</p>
               </div>
             </div>
 

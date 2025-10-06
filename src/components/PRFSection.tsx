@@ -38,13 +38,13 @@ export function PRFIntro() {
       <div className="max-w-6xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-10 items-center">
         <div>
           <motion.p {...fadeUp(0)} className="text-sm tracking-[0.2em] uppercase text-[color:var(--ncai-arsenic)]">
-            Regenerative Aesthetics
+            Regenerative Medicine & Aesthetics
           </motion.p>
           <motion.h2 {...fadeUp(0.2)} className="mt-3 text-3xl md:text-5xl font-semibold text-[color:var(--ncai-phantom)]">
-            Where Science Meets Natural Beauty
+            The Power of Natural Healing
           </motion.h2>
           <motion.p {...fadeUp(0.4)} className="mt-4 text-lg leading-relaxed text-[color:var(--ncai-arsenic)]">
-            Our facial and biologic rejuvenation protocols leverage <strong>Platelet-Rich Fibrin (PRF)</strong> to accelerate healing, stimulate collagen, and restore volume — all using your body's own biology. No synthetic fillers. Just elegant, natural results.
+            Our comprehensive <strong>Platelet-Rich Fibrin (PRF)</strong> protocols harness your body's natural healing power for facial rejuvenation, enhanced surgical outcomes, and tissue regeneration. From aesthetic treatments to implant site enhancement, PRF accelerates healing and optimizes results — all using your own biology. No synthetic materials. Just elegant, natural outcomes.
           </motion.p>
           <motion.div {...fadeUp(0.6)} className="mt-6 flex flex-wrap gap-3">
             <a href="#prf-applications" className="inline-flex items-center px-5 py-3 rounded-full bg-[color:var(--ncai-blue)] text-white font-medium hover:bg-[color:var(--ncai-azure)] transition-colors">
@@ -69,7 +69,7 @@ export function PRFIntro() {
   );
 }
 
-const APPLICATIONS = [
+const AESTHETIC_APPLICATIONS = [
   {
     title: "PRF Under-Eye Rejuvenation",
     body: "Tightens, brightens, and reduces hollowing naturally by stimulating collagen and microcirculation.",
@@ -92,21 +92,67 @@ const APPLICATIONS = [
   },
 ];
 
+const SURGICAL_APPLICATIONS = [
+  {
+    title: "Dental Implant Site Enhancement",
+    body: "Accelerates osseointegration and soft tissue healing around implants for optimal long-term success.",
+  },
+  {
+    title: "Bone Grafting & Sinus Lifts",
+    body: "Mixed with bone graft material to enhance regeneration and reduce healing time.",
+  },
+  {
+    title: "Socket Preservation",
+    body: "Placed after extractions to maintain alveolar ridge volume and promote faster healing.",
+  },
+  {
+    title: "Soft Tissue Grafting",
+    body: "Improves graft integration and reduces post-operative inflammation and discomfort.",
+  },
+  {
+    title: "Ridge Augmentation",
+    body: "Enhances bone and tissue regeneration for complex reconstructive cases.",
+  },
+];
+
 export function PRFApplications() {
   return (
     <section id="prf-applications" className="relative w-full py-24 md:py-32" style={{ fontFamily: "Manrope, ui-sans-serif, system-ui", ["--ncai-blue" as any]: TOKENS.blue, ["--ncai-azure" as any]: TOKENS.azure, ["--ncai-steel" as any]: TOKENS.steel, ["--ncai-arsenic" as any]: TOKENS.arsenic, ["--ncai-phantom" as any]: TOKENS.phantom }}>
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <motion.h3 {...fadeUp(0)} className="text-2xl md:text-4xl font-semibold text-[color:var(--ncai-phantom)] mb-10">
-          Aesthetic Applications
+        <motion.h3 {...fadeUp(0)} className="text-2xl md:text-4xl font-semibold text-[color:var(--ncai-phantom)] mb-4">
+          PRF Applications
         </motion.h3>
-        <ul className="grid md:grid-cols-2 gap-8 md:gap-10">
-          {APPLICATIONS.map((item, i) => (
-            <motion.li key={item.title} {...fadeUp(i)} className="rounded-2xl border border-[color:var(--ncai-steel)] bg-white/90 backdrop-blur-sm p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow">
-              <h4 className="text-xl md:text-2xl font-semibold text-[color:var(--ncai-blue)]">{item.title}</h4>
-              <p className="mt-2 text-[color:var(--ncai-arsenic)]">{item.body}</p>
-            </motion.li>
-          ))}
-        </ul>
+        <motion.p {...fadeUp(0.1)} className="text-[color:var(--ncai-arsenic)] mb-10 max-w-3xl">
+          PRF therapy harnesses your body's natural healing power for both aesthetic enhancement and surgical regeneration.
+        </motion.p>
+
+        <div className="mb-12">
+          <motion.h4 {...fadeUp(0.2)} className="text-xl md:text-2xl font-semibold text-[color:var(--ncai-blue)] mb-6">
+            Aesthetic & Facial Rejuvenation
+          </motion.h4>
+          <ul className="grid md:grid-cols-2 gap-8 md:gap-10">
+            {AESTHETIC_APPLICATIONS.map((item, i) => (
+              <motion.li key={item.title} {...fadeUp(0.3 + i * 0.1)} className="rounded-2xl border border-[color:var(--ncai-steel)] bg-white/90 backdrop-blur-sm p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow">
+                <h5 className="text-lg md:text-xl font-semibold text-[color:var(--ncai-blue)]">{item.title}</h5>
+                <p className="mt-2 text-[color:var(--ncai-arsenic)]">{item.body}</p>
+              </motion.li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <motion.h4 {...fadeUp(0.8)} className="text-xl md:text-2xl font-semibold text-[color:var(--ncai-blue)] mb-6">
+            Surgical & Regenerative Medicine
+          </motion.h4>
+          <ul className="grid md:grid-cols-2 gap-8 md:gap-10">
+            {SURGICAL_APPLICATIONS.map((item, i) => (
+              <motion.li key={item.title} {...fadeUp(0.9 + i * 0.1)} className="rounded-2xl border border-[color:var(--ncai-steel)] bg-white/90 backdrop-blur-sm p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow">
+                <h5 className="text-lg md:text-xl font-semibold text-[color:var(--ncai-blue)]">{item.title}</h5>
+                <p className="mt-2 text-[color:var(--ncai-arsenic)]">{item.body}</p>
+              </motion.li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
