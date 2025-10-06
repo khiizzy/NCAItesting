@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: 'kern' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans text-ncai-phantom antialiased;
+    letter-spacing: 0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans;
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 40px rgba(72, 168, 255, 0.4);
+  }
+
+  .gradient-blue {
+    background: linear-gradient(135deg, #0051C6 0%, #48A8FF 100%);
+  }
+
+  .gradient-overlay {
+    background: linear-gradient(180deg, rgba(0, 81, 198, 0.05) 0%, rgba(72, 168, 255, 0.1) 100%);
+  }
+
+  @keyframes smooth-slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: smooth-slide-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes smooth-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-smooth-fade {
+    animation: smooth-fade-in 1s ease-out forwards;
+  }
+}
